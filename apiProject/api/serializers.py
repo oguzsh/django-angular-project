@@ -8,7 +8,7 @@ class UserSerializer(serializers.HyperlinkedModelSerializer):
         fields = ('name', 'surname', 'notes')
 
 
-class NoteSerializer(serializers.ModelSerializer):
+class NoteSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Note
         fields = ('noteTitle',)

@@ -8,7 +8,17 @@ router.register(r'users', views.UserViewSet)
 router.register(r'notes', views.NoteViewSet)
 
 urlpatterns = [
+
+    # Admin url
     url(r'^admin/', admin.site.urls),
+
+    # Page url
+    url(r'^$', views.HomePageView.as_view()),
+    url(r'^users/', views.UsersPageView.as_view()),
+    url(r'^notes/', views.NotesPageView.as_view()),
+
+    # Api urls
     url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
-    url(r'^', include(router.urls))
+    url(r'^api/', include(router.urls))
+
 ]
