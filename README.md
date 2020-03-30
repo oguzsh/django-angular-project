@@ -22,7 +22,11 @@
 - `cd apiProject`
 - `python manage.py migrate`
 
-### Create Super User
+### Admin Panel
+username : admin
+password: admin123
+
+If you want create a new super user : 
 `python manage.py createsuperuser --email admin@example.com --username admin`
 
 ### Start Server
