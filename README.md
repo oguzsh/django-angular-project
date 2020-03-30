@@ -5,7 +5,7 @@
 ### Create a virtual environment to isolate our package dependencies locally
 
 1. Create venv
-`python3 -m venv env`
+`python -m venv env`
 
 2. Activate venv
 - On Linux use :
