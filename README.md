@@ -15,8 +15,8 @@
     `env\Scripts\activate`
     
 ### Install Django and Django REST framework into the virtual environment
-- `pip install django`
-- `pip install djangorestframework`
+- `pip install -r requirements.txt`
+
 
 ### Migrate Database
 - `cd apiProject`

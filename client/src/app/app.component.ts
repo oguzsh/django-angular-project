@@ -40,8 +40,10 @@ export class User {
   name: string;
   surname: string;
   notes: string;
+  results: any;
 }
 
 export class Note {
   noteTitle: string;
+  results: any;
 }
